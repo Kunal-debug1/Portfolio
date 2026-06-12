@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kunal-debug1.github.io/Portfolio/sitemap.xml

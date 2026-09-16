@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { Project } from "@/data/portfolio";
 
@@ -32,7 +32,7 @@ export function ProjectExplorer({ projects }: { projects: Project[] }) {
           <div className="tags">{project.technologies.map(t => <span key={t}>{t}</span>)}</div>
           <div className="project-actions">
             <Link className="project-link" href={`/work/${project.slug}`}>Explore the build <ArrowUpRight size={17} /></Link>
-            <a className="project-link" href={project.github} target="_blank" rel="noreferrer"><Github size={16} /> GitHub</a>
+            <a className="project-link" href={project.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={16} /></a>
             {project.live && <a className="project-link" href={project.live} target="_blank" rel="noreferrer">Live demo <ArrowUpRight size={16} /></a>}
           </div>
         </div>

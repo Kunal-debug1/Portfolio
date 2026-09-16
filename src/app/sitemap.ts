@@ -1,0 +1,1 @@
+import type { MetadataRoute } from "next"; import { projects } from "@/data/portfolio"; export default function sitemap(): MetadataRoute.Sitemap { const base = "https://kunal-debug1.github.io/Portfolio"; return [{ url: base, lastModified: new Date() }, ...projects.map(p => ({ url: `${base}/work/${p.slug}`, lastModified: new Date() }))]; }

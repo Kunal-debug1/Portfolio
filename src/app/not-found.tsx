@@ -1,0 +1,1 @@
+import Link from "next/link"; export default function NotFound() { return <main className="not-found shell"><p className="section-label">404 / NOT FOUND</p><h1>This page took a wrong turn.</h1><Link className="button button-primary" href="/">Back home</Link></main>; }
